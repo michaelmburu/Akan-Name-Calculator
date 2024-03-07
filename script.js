@@ -12,7 +12,7 @@ function calculateDayOfWeek(birthdayDate) {
     return Math.floor(( ( (cC/4) -2*cC-1) + ((5*yY/4) ) + ((26*(mM+1)/10)) + dD ) % 7);
 }
 
-// This function calculates the Akan Name for the day of week selected in the birth
+// This function calculates the Akan Name for the day of week selected in the birthdate
 function calculateMyAkanName() {
     const birthDate = new Date(document.getElementById('birthdate').value);
     const gender = document.getElementById('gender').value;
