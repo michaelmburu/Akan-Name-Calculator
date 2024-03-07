@@ -3,6 +3,7 @@ const akanNames = {
     female: ['Ama', 'Akua', 'Yaa', 'Afua', 'Adwoa', 'Akosua', 'Abenaa']
 };
 
+//This function calculates the day of week for a birthdate selected on the form.
 function calculateDayOfWeek(birthdayDate) {
     const cC = parseInt(birthdayDate.getFullYear().toString().substring(0, 2));
     const yY = parseInt(birthdayDate.getFullYear().toString().substring(2, 4));
@@ -11,6 +12,7 @@ function calculateDayOfWeek(birthdayDate) {
     return Math.floor(( ( (cC/4) -2*cC-1) + ((5*yY/4) ) + ((26*(mM+1)/10)) + dD ) % 7);
 }
 
+// This function calculates the Akan Name for the day of week selected in the birth
 function calculateMyAkanName() {
     const birthDate = new Date(document.getElementById('birthdate').value);
     const gender = document.getElementById('gender').value;
