@@ -1,0 +1,28 @@
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+body {
+    font-family: ' Calibri'
+}
+
